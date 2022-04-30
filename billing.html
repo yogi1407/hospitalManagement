@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<style>
+  #header {
+    background-color: #5c755e;
+    margin: 10px;
+    height: 100px;
+    border-radius: 5px;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 8px;
+    margin-top: 0px;
+  }
+
+  h2 {
+    text-shadow: 2px 2px 5px red;
+    font-size: 200%;
+    text-align: center;
+    color: white;
+    font-family: sans serif;
+    margin: 0px;
+    word-spacing: 15px;
+    position: relative;
+    top: -75%;
+  }
+
+  #footer ul {
+    padding: 5px;
+    margin: 0px;
+    text-align: middle;
+  }
+
+  #footer li {
+    display: inline;
+  }
+
+  #footer a {
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    vertical-align: middle;
+    font-family: Arial;
+  }
+
+  #footer a:hover {
+    color: black;
+    background-color: white;
+  }
+
+  #footer {
+    background-color: black;
+    margin: 0px;
+    height: 145px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 90%;
+  }
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #box {
+    width: 300px;
+    height: 140px;
+    background: lightgrey;
+    padding: 20px;
+    text-align: center;
+    margin-left: 600px;
+    margin-top: 40px;
+    opacity: 0.8;
+  }
+
+  .bg-img {
+    background-image: url("m5.jpg");
+    height: 400px;
+    width: 100%;
+    border-radius: 15px;
+  }
+</style>
+
+<body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div id="header">
+    <img src="log1.jpg" alt="">
+    <h2>NEW LIFE HOSPITAL</h2>
+  </div>
+
+  <div class="bg-img">
+    <div id="box">
+      <form name="myform" method="post" onsubmit="return f2()">
+        <b>Patient's Name:</b><br>
+        <input type="text" name="name">
+        <br><br>
+        <b>Appointment number:</b><br>
+        <input type="text" name="number">
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+
+        <script>
+          function f1() {
+            open("billing1.html");
+          }
+
+          function f2() {
+            var x = document.myform.name.value;
+            var y = document.myform.number.value;
+            if (x == "saurav" && y == "123") {
+              f1();
+              return true;
+            } else if (x == null || x == "") {
+              alert("Name Can't be blank");
+              return false;
+            } else {
+              alert("Not Registerd");
+              return false;
+            }
+          }
+        </script>
+      </form>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+
+  <div style="padding:60px;"></div>
+  <div id="footer">
+    <ul>
+      <li> <a href="file:///C:/Users/schau/Desktop/project/contactus.html">Contact us</a></li> |
+      <li> <a href="">Need Help?</a></li> |
+      <input type="text" placeholder="Enter your E-Mail.." name="search">
+      <button style="font-size:13px"> <i class="fa fa-check-square"></i></button>
+    </ul>
+    <p>Call us-010010</p>
+    <marquee>Follow Us On
+      <a href="https://www.facebook.com"><img src="fb.jpg" width="40px" height="30px"></a>
+      <a href="https://www.twitter.com"><img src="twitter.jpg" width="40px" height="30px">
+        <a href="https://www.instagram.com"><img src="insta.jpg" width="40px" height="30px"></a></marquee></a>
+    <br>
+    &copy; 2018 All Rights Reserved
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+
+<br><br><img src="m5.jpg" width="1195" height="400">
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_fjords.jpg">
+      <img src="m1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"></div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="m2.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc"></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="m3.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc"></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="m4.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"></div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;"></div>
+<br>
+<br>
+<p>ddfdssg</p>
+
+
+
+
+div.gallery 
+{
+    border: 1px solid #ccc;
+	margin:20px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    
+    height:auto;
+	width:100%;
+	margin-right:5px;
+}
+
+div.desc {
+    padding: 5px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="footer">
+<ul>
+<li> <a href="">Contact us</a></li> |
+<li> <a href="">Follow us</a></li>  |
+<li> <a href="">Need Help?</a></li> |
+
+</ul>
+<br>
+&copy; 2018 All Rights Reserved
+</div>

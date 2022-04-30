@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>
+my project
+</title>
+<style>
+body{
+background-color: white;
+margin: 0px;
+font-family:Verdana, Georgia, serif;
+font-size: 14px;
+}
+#header{
+background-color: #5c755e;
+margin: 10px;
+height :100px;
+border-radius: 5px;
+}
+#nav
+{
+background-color: darkgreen;
+margin:10px;
+height: 35px;
+font-size: 20px;
+font-weight: bold;
+font: Tahoma;
+}
+#nav ul{
+padding:0;
+margin:0;
+list-style-type:none;
+text-align:right;
+}
+#nav li{
+display:inline;
+padding:15px;
+vertical-align:middle;
+}
+#nav a {
+text-decoration:none;
+padding:8px 8px 8px 8px;
+color:white;
+vertival-align:middle;
+}
+#nav a:hover{
+color:black;
+background-color:white;
+}
+
+
+img{
+max-width:100%;
+max-height:100%;
+
+margin:10px;
+margin-top:0px;
+}
+h2{
+text-shadow: 2px 2px 4px red;
+font-size:200%;
+text-align:center;
+color:white;
+font-family:"Century Gothic","Gill Sans",Arial,sans serif;
+margin: 0px;
+
+position: relative;
+top: 50%;
+-webkit-transform:translateY(-400%);
+-ms-transform: tranlateY(-400%);
+transform: translateY(-400);
+}
+.images{
+width:555px;
+height:200px;
+border-radius: 5px;
+margin-left:10px; margin-right: 5px;
+margin-top:0px;margin-bottom:5px;
+}
+.form{
+width:300px;
+height:485px;
+margin:auto;
+background:#6faf89;
+margin-top:0px;
+padding:10px;
+text-align:center;
+
+}
+.appointment{
+
+padding:10px;
+font-family:arial;
+border:1px dotted white;
+margin:1px;
+}
+
+
+
+#appointment{
+width:100%;
+background:color: #051019;
+opacity: 0.8;
+padding: 5px 0px;
+}
+#button{
+width: 250px;
+padding: 10px;
+border-radius: 5px;
+outline: opx;
+}
+#butto{
+width: 210px;
+padding: 30px;
+border-radius: 5px;
+outline: opx;
+}
+#ph{
+width: 250px;
+padding: 10px;
+border-radius: 5px;
+}
+#phone{
+width: 200px;
+padding: 10px;
+border-radius: 5px;
+outline: opx;
+}
+#rd{
+
+}
+#but{
+color: black;
+font-size: 18px;
+}
+#butt{
+width: 150px;
+padding: 10px;
+border-radius: 5px;
+outline: 0px;
+background-color: black;
+border: 2px solid #01010c;
+color: aliceblue;
+font-size:10px;
+font-weight:bold;
+cursor:pointer;
+}
+input[type=submit] : hover{
+background:green;
+}
+h1{
+text-align:center;
+background:orange;
+color:black;
+padding:10px;
+border-radius:10px;
+}
+.newspaper {
+    -webkit-column-count: 5; 
+    -moz-column-count: 5; 
+    column-count: 5;
+    -webkit-column-gap: 5px; 
+    -moz-column-gap: 40px; 
+    column-gap: 40px;
+    -webkit-column-rule: 1px solid lightblue; 
+    -moz-column-rule: 1px solid lightblue; 
+    column-rule: 1px solid lightblue;
+	text-align:center;
+	margin-right:8px;
+	background-color:#00ffbf;
+}
+
+h2 {
+    -webkit-column-span: all; 
+    column-span: all;
+}
+h4 {
+    letter-spacing: 3px;
+	text-align:center;
+	text-shadow: 2px 2px 5px red;
+	font-size:15px;
+}
+.container{
+    max_width:1200px;
+	margin:auto;
+	background:#f2f2f2;
+	overflow:auto;
+	}
+.gallery{
+margin:5px;
+border:1px solid #ccc;
+float:left;
+width:390px;
+}
+.gallery img{
+width:100%;
+height:auto;
+}
+.desc{
+padding:15px;
+text-align-center;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="header">
+<img src="logo.png" alt="">
+<h2>Saurav Chaudhary</h2>
+
+</div>
+<div id="nav">
+<ul>
+<li><a href="">Home</a></li>
+<li><a href="">Doctors</a></li>
+<li><a href="">Contact</a></li>
+<li><a href="">About Us</a></li>
+</ul>
+
+
+
+</div>
+<img src="5.jpg" alt="" width="1058" height="350" style="float:center margin:5px">
+
+
+<div class="form" style="float:left">
+<form id="appointment">
+<h1 style="font-size:20px"> Make an appointment </h1>
+<hr>
+<input type="text" name="fname" id="button" placeholder="FULL NAME"><br>
+<br>
+<input type="radio" name="gender" id="rd"><span id="but">Male</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="gender" id="rd"><span id="but">Female</span>
+<br><br>
+<span style="font-size:18px;">Date Of Birth</span>
+<br>
+<select name ="DateOfBirth">
+<option>Month</option>
+
+<option value="January">January</option>
+<option value="January">February</option>
+<option value="January">March</option>
+<option value="January">April</option>
+<option value="January">May</option>
+<option value="January">June</option>
+<option value="January">July</option>
+<option value="January">August</option>
+<option value="January">September</option>
+<option value="January">October</option>
+<option value="January">November</option>
+<option value="January">December</option>
+</select>
+<select name="DOBday">
+<option>Day</option>
+<option value="1">1</option>
+<option value="1">2</option>
+<option value="1">3</option>
+<option value="1">4</option>
+<option value="1">5</option>
+<option value="1">6</option>
+<option value="1">7</option>
+<option value="1">8</option>
+<option value="1">9</option>
+<option value="1">10</option>
+<option value="1">11</option>
+<option value="1">12</option>
+<option value="1">13</option>
+<option value="1">14</option>
+<option value="1">15</option>
+<option value="1">16</option>
+<option value="1">17</option>
+<option value="1">18</option>
+<option value="1">19</option>
+<option value="1">20</option>
+<option value="1">21</option>
+<option value="1">22</option>
+<option value="1">23</option>
+<option value="1">24</option>
+<option value="1">25</option>
+<option value="1">26</option>
+<option value="1">27</option>
+<option value="1">28</option>
+<option value="1">29</option>
+<option value="1">30</option>
+<option value="1">31</option>
+
+</select>
+<select name="DOByear">
+<option>Year</option>
+<option value="2000">1980</option>
+<option value="2000">1981</option>
+<option value="2000">1982</option>
+<option value="2000">1983</option>
+<option value="2000">1984</option>
+<option value="2000">1985</option>
+<option value="2000">1986</option>
+<option value="2000">1987</option>
+<option value="2000">1988</option>
+<option value="2000">1989</option>
+<option value="2000">1990</option>
+<option value="2000">1991</option>
+<option value="2000">1992</option>
+<option value="2000">1993</option>
+<option value="2000">1994</option>
+<option value="2000">1995</option>
+<option value="2000">1996</option>
+<option value="2000">1997</option>
+<option value="2000">1998</option>
+<option value="2000">1999</option>
+<option value="2000">2000</option>
+<option value="2000">2001</option>
+</select>
+<br>
+<br>
+<input type="email" name="emailid" id="button" placeholder="E-MAIL ID"><br><br>
+
+<input type="number" name="phone"  placeholder="MOBILE NO" id="ph"><br><br>
+<input type="text" name="message" id="butto" placeholder="YOUR MESSAGE"><br><br>
+
+
+
+<input type="submit" value:"submit" id="butt">
+</form>
+</div>
+</div>
+</div>
+
+<div class="newspaper">
+<p style="font-size:10px;text-align:center"><b><i style="font-size:24px;color:red" class="fa">&#xf0f8;</i><br>Complete<br>facilities</b></p> dolor sit amet, consectetuer <p style="font-size:10px;text-align:center"><b><i style="font-size:24px;color:red" class="fa">&#xf0f9;</i><br>24 hours<br>emergency</b></p>Vadipiscing elit, sed diam nonummy<p style="font-size:10px;text-align:center"><i style="font-size:24px;color:red" class="fa">&#xf0f1;</i><b><br>Modern<br>Technology</b></p> nibh euismod tincidunt ut laoreet dolore<p style="font-size:10px;text-align:center"><b><i style="font-size:24px;color:red" class="fa">&#xf0f0;</i><br>Professional<br>Doctor</b></p> magna aliquam erat volutpat. Ut wisi enim ad <p style="font-size:10px;text-align:center"><b><i style="font-size:24px;color:red" class="fa">&#xf21e;</i><br>Excellent<br>services</b></p> minim veniam, quis nostrud exerci tation ullamc
+
+
+</div>
+<h4><u>who we are-</u></h4>
+<p style="text-align:center;word-spacing: 10px;font-size:25px;color:#808080">This is a modern medical center with<br> complete facilities</p><br>
+<div class="container">
+<div class="gallery"
+<img src="Tulips.jpg">
+<div class="desc">descrption</div>
+</div>
+<div class="gallery"
+<img src="Koala.jpg">
+<div class="desc">descrption</div>
+</div>
+<div class="gallery"
+<img src="Penguins.jpg">
+<div class="desc">descrption</div>
+</div>
+<div class="gallery"
+<img src="Hydrangeas.jpg">
+<div class="desc">descrption</div>
+</div>
+</div>
+</body>
+</html>

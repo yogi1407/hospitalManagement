@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body,
+    html {
+      height: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #header {
+      background-color: #5c755e;
+      margin: 10px;
+      height: 100px;
+      border-radius: 5px;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+
+      margin: 8px;
+      margin-top: 0px;
+    }
+
+    h2 {
+      text-shadow: 2px 2px 4px red;
+      font-size: 200%;
+      text-align: center;
+      color: white;
+      font-family: sans serif;
+      margin: 0px;
+      word-spacing: 15px;
+
+      position: relative;
+      top: -75%;
+
+    }
+
+    h1 {
+      text-align: center;
+      color: orange;
+      text-shadow: 2px 2px 4px #000000;
+      font-size: 35px;
+    }
+
+    div.polaroid {
+      width: 1000px;
+      height: 450px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      text-align: center;
+    }
+
+    /* The laptop with borders */
+    .laptop {
+      transform-origin: 0 0;
+      transform: scale(.6) translate(-50%);
+      left: 50%;
+      position: absolute;
+      width: 1366px;
+      height: 800px;
+      border-radius: 6px;
+      border-style: solid;
+      border-color: black;
+      border-width: 24px 24px 80px;
+      background-color: white;
+    }
+
+    /* The keyboard of the laptop */
+    .laptop:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 1600px;
+      height: 60px;
+      margin: 80px 0 0 -110px;
+      background: black;
+      border-radius: 6px;
+    }
+
+    /* The top of the keyboard */
+    .laptop:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 250px;
+      height: 30px;
+      bottom: -110px;
+      left: 50%;
+      transform: translate(-50%);
+      background: #f1f1f1;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      z-index: 1;
+    }
+
+    /* The screen (or content) of the device */
+    .laptop .content {
+      width: 1366px;
+      height: 800px;
+      overflow: hidden;
+      border: none;
+      text-align: center;;
+    }
+
+    h3 {
+      padding: 5px;
+      margin: 30px;
+      font-size: 40px;
+      color: CadetBlue;
+    }
+
+    #footer ul {
+      padding: 5px;
+      margin: 0;
+      list-style-type: none;
+      text-align: middle;
+    }
+
+    #footer li {
+      display: inline;
+
+    }
+
+    #footer a {
+      text-decoration: none;
+      padding: 8px 8px 8px 8px;
+      color: white;
+      vertical-align: middle;
+      font-family: Arial;
+    }
+
+    #footer a:hover {
+      color: black;
+      background-color: white;
+    }
+
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    #footer {
+      background-color: black;
+      margin: 5px;
+      height: 110px;
+      border-radius: 5px;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 90%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="header">
+    <img src="log1.jpg" alt="">
+    <h2>NEW LIFE HOSPITAL </h2>
+
+  </div>
+  <h1>ABOUT US</h1>
+  <hr style="length:5px">
+  <img src="h4.jpg" alt="" width="1480" height="350" style="align:center;">
+
+  <div class="laptop">
+    <div class="content">
+      <h3><br><br><br><br><br>New Life Hospital was created in 1990.<br><br>
+        Our Motto is-<b>The Best Possible Care. The Best Possible People.<b><br>
+            The healthcare we provide is best around the world.</h3>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+
+  <div style="padding:350px;"></div>
+
+  <div id="footer">
+    <ul>
+      <li> <a href="">Contact us</a></li> |
+      <li> <a href="">Follow us</a></li> |
+      <li> <a href="">Need Help?</a></li> |
+
+    </ul>
+    <marquee>Follow Us On
+      <a href="https://www.facebook.com"><img src="fb.jpg" width="40px" height="30px"></a>
+      <a href="https://www.twitter.com"><img src="twitter.jpg" width="40px" height="30px">
+        <a href="https://www.instagram.com"><img src="insta.jpg" width="40px" height="30px"></a></marquee></a>
+    <br>
+    &copy; 2018 All Rights Reserved
+  </div>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  
+  display: flex;
+  flex-wrap: wrap;
+ 
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+
+
+.col-1,
+.col-2,
+.col-3 {
+  padding: 10px 6px;
+}
+
+.container {
+  background-color: lightyellow;
+  padding: 5px 20px 15px 26px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 300px;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: navy;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: black;
+}
+
+a {
+  color: red;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+span.price {
+  float: right;
+  color: solid black;
+}
+
+
+#header{
+background-color: #5c755e;
+margin: 0px;
+height :100px;
+border-radius: 5px;
+}
+img{
+max-width:100%;
+max-height:100%;
+
+margin:0px;
+margin-top:0px;
+}
+h2{
+text-shadow: 2px 2px 4px red;
+font-size:200%;
+text-align:center;
+color:white;
+font-family:"Century Gothic","Gill Sans",Arial,sans serif;
+margin: 0px;
+word-spacing:15px;
+
+position: relative;
+top: -75%;
+
+}
+h1{
+text-align:center;
+color: orange;
+    text-shadow: 2px 2px 4px #000000;
+	font-size:35px;
+	}
+	#footer ul{
+padding:5px;
+margin:0;
+list-style-type:none;
+text-align:middle;
+}
+#footer li{
+display:inline;
+
+}
+#footer a {
+text-decoration:none;
+padding:8px 8px 8px 8px;
+color:white;
+vertical-align:middle;
+font-family:Arial;
+}
+#footer a:hover{
+color:black;
+background-color:white;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#footer{
+background-color:black;
+margin: 5px;
+height: 110px;
+border-radius:5px;
+color:white;
+text-align:center;
+padding:15px;
+font-size:90%;
+}
+</style>
+</head>
+<body>
+<div id="header">
+<img src="logo2.PNG" alt="">
+<h2 >NEW LIFE HOSPITAL    </h2>
+
+</div>
+
+
+<div class="row">
+  <div class="col-3">
+    <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <h3>Billing Address</h3>
+            <label for="fname"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="">
+            <label for="email"> Email</label>
+            <input type="text" id="email" name="email" placeholder="">
+            <label for="adr">Address</label>
+            <input type="text" id="adr" name="address" placeholder="">
+            <label for="city"> City</label>
+            <input type="text" id="city" name="city" placeholder="">
+
+            <div class="row">
+              <div class="col-2">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="">
+              </div>
+			  <br>
+              <div class="col-2">
+               <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="">
+            <div class="row">
+              <div class="col-2">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="">
+              </div>
+              <div class="col-2">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <input type="submit" value="Continue to payment" class="btn">
+      </form>
+    </div>
+  </div>
+  <div class="col-1">
+    <div class="container" >
+      <h4>Bill <span class="price" style="color:black"> <b>4</b></span></h4>
+      <p><a href="#">Appointment Charge</a> <span class="price">1000</span></p>
+      <p><a href="#">Operation</a> <span class="price">20000</span></p>
+      <p><a href="#">Bed charge</a> <span class="price">2000</span></p>
+      <p><a href="#">Medicine</a> <span class="price">1500</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>24500</b></span></p>
+    </div>
+  </div>
+</div>
+<div class="clearfix"></div>
+
+<div style="padding:50px;"></div>
+
+<div id="footer">
+<ul>
+<li> <a href="">Contact us</a></li> |
+<li> <a href="">Follow us</a></li>  |
+<li> <a href="">Need Help?</a></li> |
+
+</ul>
+	<marquee>Follow Us On
+			<a href="https://www.facebook.com"><img src="fb.jpg" width="40px" height="30px"></a>
+			<a href="https://www.twitter.com"><img src="twitter.jpg" width="40px" height="30px">
+			<a href="https://www.instagram.com"><img src="insta.jpg" width="40px" height="30px"></a></marquee></a>
+<br>
+&copy; 2018 All Rights Reserved
+</div>
+
+
+</body>
+</html>

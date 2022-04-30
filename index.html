@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+my project
+</title>
+<style>
+body{
+background-color:white;
+margin:0px;
+font-family:Verdana;
+font-size:14px;
+}
+#header{
+background-color:#5c755e;
+margin:10px;
+height:70px;
+border-radius:5px;
+}
+#nav
+{
+background-color:darkgreen;
+margin:10px;
+height:30px;
+font-size:20px;
+font-weight:bold;
+font:Tahoma;
+}
+#nav ul{
+padding:0px;
+margin:0px;
+text-align:left;
+}
+#nav li{
+display:inline;
+padding:15px;
+vertical-align:middle;
+}
+#nav a {
+text-decoration:none;
+color:white;
+vertical-align:middle;
+}
+#nav a:hover{
+color:black;
+background-color:white;
+}
+img{
+max-width:100%;
+max-height:100%;
+margin:10px;
+margin-top:0px;
+}
+h2{
+text-shadow: 2px 2px 5px red;
+font-size:200%;
+text-align:center;
+color:white;
+font-family:sans serif;
+margin:0px;
+word-spacing:15px;
+position:relative;
+top:-85%;
+}
+.form
+{
+width:300px;
+height:495px;
+background:#6faf89;
+margin-top:0px;
+padding:10px;
+text-align:center;
+}
+#button{
+width:250px;
+padding:10px;
+border-radius:5px;
+}
+#butto
+{
+width:230px;
+padding:25px;
+border-radius:5px;
+}
+#ph
+{
+width:250px;
+padding:10px;
+border-radius:5px;
+}
+#phone
+{
+width:200px;
+padding:10px;
+border-radius:5px;
+}
+#but
+{
+color:black;
+font-size:18px;
+}
+#butt
+{
+width:150px;
+padding:10px;
+border-radius:5px;
+background-color:black;
+border:2px solid white;
+color:aliceblue;
+font-size:12px;
+font-weight:bold;
+cursor:pointer;
+}
+input[type=submit] : hover{
+background:red;
+}
+h1
+{
+text-align:center;
+background:orange;
+color:black;
+padding:10px;
+border-radius:10px;
+}
+.newspaper 
+{
+column-count:5;
+column-gap:5px;  
+column-rule:1px solid lightblue;
+text-align:center;
+margin-right:10px;
+background-color:#00ffbf;
+}
+h2
+{
+column-span: all;
+}
+h4
+{
+letter-spacing: 3px;
+text-align:center;
+text-shadow: 2px 2px 5px red;
+font-size:15px;
+}
+#footer
+{
+background-color:black;
+margin: 5px;
+height: 145px;
+border-radius:5px;
+color:white;
+text-align:center;
+padding:15px;
+font-size:90%;
+}
+.first
+{
+max-width:25%;
+float:left;
+margin-left:50px;
+}
+.slideshow-container
+{
+max-width: 1500px;
+position: relative;
+margin-left: 0px;
+}
+.text
+{
+color: blue;
+font-size: 15px;
+padding: 8px 12px;
+position: relat;
+bottom: 8px;
+width: 100%;
+text-align: center;
+text-shadow: 4px 2px 4px red;
+font-family: cursive;
+}
+.dot
+{
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+#footer ul
+{
+padding:5px;
+margin:0px;
+text-align:middle;
+}
+#footer li
+{
+display:inline;
+}
+#footer a
+{
+text-decoration:none;
+padding:5px;
+color:white;
+vertical-align:middle;
+font-family:Arial;
+}
+#footer a:hover
+{
+color:black;
+background-color:white;
+}
+*
+{
+box-sizing: border-box;
+}
+.column
+{
+float: left;
+width: 25%;
+padding: 10px;
+}
+.clearfix:after 
+{
+content: "";
+display: table;
+clear: both;
+}
+table 
+{
+border-spacing: 2px;
+width: 100%;  
+}
+th,td  
+{
+text-align:left;
+padding: 12px;
+}
+tr:nth-child(odd)
+{
+background-color: #f2f2f2
+}
+.right-nav
+{
+float: right;
+
+
+}
+ .affix {
+      top: 0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+function validateForm() 
+{
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") 
+	{
+        alert("Name must be filled out");
+        return false;
+    }
+	
+}
+</script>
+</head>
+<body>
+<div id="header">
+<img src="log1.jpg" alt="">
+<h2>NEW LIFE HOSPITAL</h2>
+
+</div>
+
+<div id="nav">
+<nav class="navbar-inverse" data-spy="affix data-offset-top="197">
+<ul class ="navbar">
+<li class="active"><a href="file:///D:/sem2/HTML%20project(Hospital)/index.html">Home</a></li>
+<li><a href="file:///D:/sem2/HTML%20project(Hospital)/doctors.html">Doctors</a></li>
+<li><a href="file:///D:/sem2/HTML%20project(Hospital)/contactus.html">Contact Us</a></li>
+<li><a href="file:///D:/sem2/HTML%20project(Hospital)/aboutus1.html">About Us</a></li>
+<li><a href="file:///D:/sem2/HTML%20project(Hospital)/billing.html">Billing</a></li>
+<div class="right-nav">
+<li><a href="file:///D:/sem2/HTML%20project(Hospital)/login.html">Log In</a></li>
+<input type="text" placeholder="Search.." name="search"><button type="submit"><i class="fa fa-search"></i></button>
+</div>
+</ul>
+</div>
+<div class="slideshow-container">
+<div class="mySlides fade">  
+<img src="h1.jpg" width="1494" height="400">
+<div class="text">You</div>
+</div>
+<div class="mySlides fade">
+<img src="h2.jpg" width="1494" height="400">
+<div class="text">Are</div>
+</div>
+<div class="mySlides fade">
+<img src="h3.jpg" width="1494" height="400">
+<div class="text">Welcome!</div>
+</div>
+</div>
+<br>
+<div style="text-align:center">
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 3 seconds
+}
+</script>
+<br>
+<div class="form" style="float:left">
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" id="appointment" >
+<h1 style="font-size:20px"> Make an appointment </h1>
+<hr>
+<input type="text" name="fname" id="button" placeholder="FULL NAME"><br>
+<br>
+<input type="radio" name="gender" id="rd"><span id="but">Male</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="gender" id="rd"><span id="but">Female</span>
+<br><br>
+<span style="font-size:18px;">Date Of Birth</span>
+<br>
+<select name ="DateOfBirth">
+<option>Month</option>
+<option value="January">January</option>
+<option value="January">February</option>
+<option value="January">March</option>
+<option value="January">April</option>
+<option value="January">May</option>
+<option value="January">June</option>
+<option value="January">July</option>
+<option value="January">August</option>
+<option value="January">September</option>
+<option value="January">October</option>
+<option value="January">November</option>
+<option value="January">December</option>
+</select>
+<select name="DOBday">
+<option>Day</option>
+<option value="1">1</option>
+<option value="1">2</option>
+<option value="1">3</option>
+<option value="1">4</option>
+<option value="1">5</option>
+<option value="1">6</option>
+<option value="1">7</option>
+<option value="1">8</option>
+<option value="1">9</option>
+<option value="1">10</option>
+<option value="1">11</option>
+<option value="1">12</option>
+<option value="1">13</option>
+<option value="1">14</option>
+<option value="1">15</option>
+<option value="1">16</option>
+<option value="1">17</option>
+<option value="1">18</option>
+<option value="1">19</option>
+<option value="1">20</option>
+<option value="1">21</option>
+<option value="1">22</option>
+<option value="1">23</option>
+<option value="1">24</option>
+<option value="1">25</option>
+<option value="1">26</option>
+<option value="1">27</option>
+<option value="1">28</option>
+<option value="1">29</option>
+<option value="1">30</option>
+<option value="1">31</option>
+</select>
+<select name="DOByear">
+<option>Year</option>
+<option value="2000">1980</option>
+<option value="2000">1981</option>
+<option value="2000">1982</option>
+<option value="2000">1983</option>
+<option value="2000">1984</option>
+<option value="2000">1985</option>
+<option value="2000">1986</option>
+<option value="2000">1987</option>
+<option value="2000">1988</option>
+<option value="2000">1989</option>
+<option value="2000">1990</option>
+<option value="2000">1991</option>
+<option value="2000">1992</option>
+<option value="2000">1993</option>
+<option value="2000">1994</option>
+<option value="2000">1995</option>
+<option value="2000">1996</option>
+<option value="2000">1997</option>
+<option value="2000">1998</option>
+<option value="2000">1999</option>
+<option value="2000">2000</option>
+<option value="2000">2001</option>
+</select>
+<br>
+<br>
+<input type="email" name="emailid" id="button" placeholder="E-MAIL ID"><br><br>
+<input type="text" name="fname" id="button" placeholder="MOBILE NUMBER"><br><br>
+<input type="text" name="message" id="butto" placeholder="YOUR MESSAGE"><br><br>
+<input type="submit" value:"submit" id="butt">
+</form>
+</div>
+</div>
+</div>
+<div class="newspaper">
+<p style="font-size:10px;text-align:center"><b><i style="font-size:24px;color:red" class="fa">&#xf0f8;</i><br>Complete<br>facilities</b></p> Serious Medicine<br>Extraordinary Care  <p style="font-size:10px;text-align:center"><b><i style="font-size:24px;color:red" class="fa">&#xf0f9;</i><br>24 hours<br>emergency</b></p> Your Health<br> Our Mission <p style="font-size:10px;text-align:center"><i style="font-size:24px;color:red" class="fa">&#xf0f1;</i><b><br>Modern<br>Technology</b></p> The Highest Quality Healthcare <p style="font-size:10px;text-align:center"><b><i style="font-size:24px;color:red" class="fa">&#xf0f0;</i><br>Professional<br>Doctor</b></p>Healing Hands<br>Caring Hearts <p style="font-size:10px;text-align:center"><b><i style="font-size:24px;color:red" class="fa">&#xf21e;</i><br>Excellent<br>services</b></p> Fast, friendly and accurate care for you
+</div><br><br><br>
+<h4><u>who we are-</u></h4><br><br>
+<p style="text-align:center;word-spacing: 10px;font-size:25px;color:#808080">This is a modern medical center with<br><br> complete facilities</p><br><br><br><br>
+<div class="clearfix"></div>
+<div style="padding:2px;"></div>
+<div style="text-align:center">
+</div>
+<div class="row">
+  <div class="column">
+    <img src="m1.jpg" alt="Nature" style="width:100%" >
+  </div>
+  <div class="column">
+    <img src="m2.jpg" alt="Fjords" style="width:100%" >
+  </div>
+  <div class="column">
+    <img src="m3.jpg" alt="Mountains" style="width:100%" >
+  </div>
+  <div class="column">
+    <img src="m4.jpg" alt="Lights" style="width:100%" >
+  </div>
+</div>
+<div class="clearfix"></div>
+
+<div style="padding:10px;"></div>
+<h4><u>camps we organize-</u></h4><br><br>
+<table>
+  <tr>
+    <th>Camps</th>
+    <th>Day</th>
+    <th>Charges</th>
+  </tr>
+  <tr>
+    <td>Full Body Checkup</td>
+    <td>Every Monday</td>
+    <td>Free of Cost</td>
+  </tr>
+  <tr>
+    <td>Eye-Checkup</td>
+    <td>Every Wednesday</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Blood Test</td>
+    <td>Every Saturday</td>
+    <td>-</td>
+  </tr>
+</table>
+<div id="footer">
+<ul>
+<li> <a href="file:///C:/Users/schau/Desktop/project/contactus.html">Contact us</a></li> |
+<li> <a href="">Need Help?</a></li> |
+<input type="text" placeholder="Enter your E-Mail.." name="search">
+      <button style="font-size:13px"> <i class="fa fa-check-square"></i></button>
+</ul>
+<p>Call us-010010</p>
+			<marquee>Follow Us On
+			<a href="https://www.facebook.com"><img src="fb.jpg" width="40px" height="30px"></a>
+			<a href="https://www.twitter.com"><img src="twitter.jpg" width="40px" height="30px">
+			<a href="https://www.instagram.com"><img src="insta.jpg" width="40px" height="30px"></a></marquee></a>
+<br>
+&copy; 2018 All Rights Reserved
+</div>
+
+</body>
+</html>
